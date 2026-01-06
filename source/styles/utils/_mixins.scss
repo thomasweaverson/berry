@@ -1,0 +1,28 @@
+@use "./variables" as *;
+
+@mixin section-title {
+  font-family: $font-heading;
+  font-size: 36px;
+  color: $color-accent-dark;
+  text-align: center;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 48px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    font-size: 52px;
+  }
+}
+
+@mixin text(
+  $font-size: 16px,
+  $line-height: 1,
+  $color: $color-text-dark,
+  $align: left
+) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  text-align: $align;
+}
