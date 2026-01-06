@@ -1,0 +1,64 @@
+@use "../utils" as *;
+
+.logo {
+  display: block;
+
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+  }
+}
+
+.logo__image {
+  display: block;
+  width: 52px;
+  height: 52px;
+
+  @media (min-width: $breakpoint-medium) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 60px;
+    height: 60px;
+    transform: none;
+  }
+}
+
+.logo__image--header {
+  @media (min-width: $breakpoint-medium) {
+    width: 58px;
+    height: 60px;
+
+    transform: scaleY(1.03);
+  }
+}
+
+.logo__text {
+  display: none;
+
+  @media (min-width: $breakpoint-medium) {
+    display: block;
+    fill: $color-accent-dark;
+  }
+}
+
+.logo__image--part-interactive {
+  fill: $color-accent-dark;
+}
+
+.logo:hover .logo__image--part-interactive,
+.logo:focus-visible .logo__image--part-interactive,
+.logo:hover .logo__text,
+.logo:focus-visible .logo__text {
+  fill: $color-accent;
+}
+
+.logo:active .logo__image--part-interactive,
+.logo:active .logo__text {
+  fill: rgba($color-accent-dark, 0.5);
+}
+
+.logo__image--part-text {
+  display: none;
+}

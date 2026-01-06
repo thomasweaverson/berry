@@ -1,0 +1,40 @@
+@use "../utils" as *;
+
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-accent;
+    fill: $color-accent;
+  }
+
+  &:active {
+    color: $color-accent-dark;
+    fill: $color-accent-dark;
+  }
+}
+
+.copyright__text {
+  padding: 6px 0 0;
+
+  @include text(
+    $font-size: 11px,
+    $line-height: 13px,
+    $color: inherit
+  );
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.copyright__logo {
+  @media (min-width: $breakpoint-medium) {
+    width: 26px;
+    height: 32px;
+  }
+}

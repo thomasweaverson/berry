@@ -1,0 +1,150 @@
+@use "../utils" as *;
+
+.page-header {
+  position: relative;
+  z-index: 2;
+  background-color: $color-background-medium;
+
+  min-height: 68px;
+
+  box-shadow: $shadow;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 22px 0;
+    min-height: 104px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding: 24px 0;
+    min-height: 108px;
+  }
+}
+
+.page-header--order {
+  margin-bottom: 120px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 200px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -120px;
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-color: $color-error;
+    background-image: url("../../images/header-order-background.jpg");
+    background-position: -891px 0;
+    background-repeat: no-repeat;
+    box-shadow: $shadow-bright-inset;
+
+    @media (min-width: $breakpoint-medium) {
+      bottom: -200px;
+      height: 200px;
+    }
+  }
+}
+
+.page-header__container {
+  position: relative;
+
+  @media (min-width: $breakpoint-medium) {
+    max-width: 716px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    max-width: 1128px;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  left: 26px;
+  top: 8px;
+
+  @media (min-width: $breakpoint-medium) {
+    left: 0;
+    top: 0;
+  }
+}
+
+.page-header__toggler {
+  position: absolute;
+  right: 21px;
+  top: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  fill: $color-accent-dark;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover .page-header__toggler-icon,
+  &:focus-visible .page-header__toggler-icon {
+    fill: $color-accent;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    display: none;
+  }
+}
+
+.page-header__toggler-icon {
+  display: none;
+}
+
+.page-header__toggler--closed {
+  .page-header__toggler-icon--closed {
+    display: block;
+  }
+}
+
+.page-header__toggler--opened {
+  width: 45px;
+
+  .page-header__toggler-icon--opened {
+    display: block;
+    fill: rgba($color-accent-dark, 0.75);
+  }
+}
+
+.page-header__navigation {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 68px;
+  left: 0;
+  width: 100vw;
+  min-height: 360px;
+  background-color: $color-background-medium;
+
+  box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25) inset;
+
+  @media (min-width: $breakpoint-medium) {
+    display: block;
+    position: static;
+    margin: 0 0 0 auto;
+    width: unset;
+    max-width: 550px;
+    min-height: unset;
+    box-shadow: none;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin: 0 0 0 452px;
+    max-width: unset;
+  }
+}
+
+.page-header__navigation--shown {
+  display: block;
+}

@@ -1,0 +1,52 @@
+@use "../utils" as *;
+
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $breakpoint-medium) {
+    gap: 32px;
+  }
+}
+
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid $color-accent-dark;
+  border-radius: 50%;
+  fill: $color-accent-dark;
+
+  &:hover,
+  &:focus-visible {
+    border-color: $color-accent;
+    fill: $color-accent;
+
+    outline-offset: 8px;
+  }
+
+  &:active {
+    border-color: rgba($color-accent-dark, 0.5);
+    fill: rgba($color-accent-dark, 0.5);
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.social__icon {
+  transform: scale(0.8);
+
+  @media (min-width: $breakpoint-medium) {
+    transform: none;
+  }
+}

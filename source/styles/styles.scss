@@ -1,7 +1,21 @@
 /* GLOBAL */
-@import "./common/variables.scss";
-@import "./common/global.scss";
-@import "./common/fonts.scss";
+@use "./common/fonts";
+@use "./common/base";
+@use "./common/visually-hidden";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+/* common */
+@use "./blocks/section-title";
+
+/* page-header */
+@use "./blocks/page-header";
+@use "./blocks/container";
+@use "./blocks/logo";
+@use "./blocks/main-navigation";
+
+/* page-footer */
+@use "./blocks/page-footer";
+@use "./blocks/contacts";
+@use "./blocks/map";
+@use "./blocks/social";
+@use "./blocks/copyright";
