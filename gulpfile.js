@@ -84,6 +84,7 @@ export function processScripts () {
     .pipe(server.stream());
 }
 
+// родной скрипт
 export function optimizeRaster () {
   const RAW_DENSITY = 2;
   const TARGET_FORMATS = [undefined, 'webp']; // undefined — initial format: jpg or png
