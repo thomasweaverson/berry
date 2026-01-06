@@ -37,12 +37,12 @@
   overflow-wrap: break-word;
   word-wrap: break-word;
 
-  &:hover,
-  &:focus-visible {
+  &:not(.main-navigation__link--current):hover,
+  &:not(.main-navigation__link--current):focus-visible {
     color: $color-accent;
   }
 
-  &:active {
+  &:not(.main-navigation__link--current):active {
     color: $color-accent-dark;
   }
 
@@ -60,4 +60,5 @@
 
 .main-navigation__link--current {
   color: $color-accent-dark;
+  cursor: default;
 }
