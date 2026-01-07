@@ -17,12 +17,6 @@
     width: 60px;
     height: 60px;
   }
-
-  @media (min-width: $breakpoint-large) {
-    width: 60px;
-    height: 60px;
-    transform: none;
-  }
 }
 
 .logo__image--header {
@@ -31,6 +25,12 @@
     height: 60px;
 
     transform: scaleY(1.03);
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 60px;
+    height: 60px;
+    transform: none;
   }
 }
 

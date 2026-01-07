@@ -6,6 +6,7 @@
 /* BLOCKS */
 /* common */
 @use "./blocks/section-title";
+@use "./blocks/button";
 
 /* page-header */
 @use "./blocks/page-header";
@@ -19,3 +20,6 @@
 @use "./blocks/map";
 @use "./blocks/social";
 @use "./blocks/copyright";
+
+/* hero */
+@use "./blocks/hero";

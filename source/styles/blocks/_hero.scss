@@ -1,0 +1,188 @@
+@use "../utils" as *;
+
+.hero {
+  padding: 60px 27px;
+  background-color: $color-background-light;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 150px 22px 60px 27.7%;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding: 181px 112px 60px 300px;
+  }
+}
+
+.hero--background {
+  min-height: 640px;
+  background-image:
+    image-set(
+      url("../../images/hero-background-small@1x.webp") 1x,
+      url("../../images/hero-background-small@2x.webp") 2x,
+      url("../../images/hero-background-small@1x.jpg") 1x,
+      url("../../images/hero-background-small@2x.jpg") 2x
+    );
+  background-repeat: no-repeat;
+  background-position: -6px -2px;
+
+  @media (min-width: 700px) {
+    background-image:
+      image-set(
+        url("../../images/hero-background-medium@1x.webp") 1x,
+        url("../../images/hero-background-medium@2x.webp") 2x,
+        url("../../images/hero-background-medium@1x.jpg") 1x,
+        url("../../images/hero-background-medium@2x.jpg") 2x
+      );
+    background-repeat: no-repeat;
+    background-position: -1px 0;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    min-height: 924px;
+  }
+
+  @media (min-width: 880px) {
+    background-image:
+      image-set(
+        url("../../images/hero-background-large@1x.webp") 1x,
+        url("../../images/hero-background-large@2x.webp") 2x,
+        url("../../images/hero-background-large@1x.jpg") 1x,
+        url("../../images/hero-background-large@2x.jpg") 2x
+      );
+    background-repeat: no-repeat;
+    background-position: top -4px left -310px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    background-position: top -4px right 0;
+    min-height: 800px;
+  }
+
+  @media (min-width: 1580px) {
+    background-size: cover;
+  }
+}
+
+.hero__wrapper {
+  @media (min-width: $breakpoint-medium) {
+    max-width: 533px;
+    margin: auto 0 0;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+}
+
+.hero__title {
+  margin: 0 0 32px;
+  line-height: 40px;
+
+  @media (min-width: $breakpoint-medium) {
+    text-align: left;
+    margin: 0 0 52px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin: 0 0 61px;
+  }
+}
+
+.hero__title-break {
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
+
+.hero__promo-list {
+  width: 78%;
+  max-width: 400px;
+  margin: 0 auto 58px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $breakpoint-medium) {
+    width: unset;
+    max-width: unset;
+    margin: 0 0 48px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    max-width: 502px;
+    margin: 0 auto 52px;
+  }
+}
+
+.hero__promo-item {
+  padding: 0 0 0 44px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 32px 32px;
+
+  &:not(:last-child) {
+    margin: 0 0 12px;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    &:not(:last-child) {
+      margin: 0 0 19px;
+    }
+  }
+}
+
+.hero__promo-item--leaf {
+  background-image: url("../../icons/hero-leaf.svg");
+}
+
+.hero__promo-item--ice {
+  background-image: url("../../icons/hero-ice.svg");
+}
+
+.hero__promo-item--delivery {
+  background-image: url("../../icons/hero-delivery.svg");
+}
+
+.hero__promo-text {
+  margin: 0;
+
+  @include text(
+    $font-size: 16px,
+    $line-height: 19px,
+  );
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.hero__promo-item--ice .hero__promo-text {
+  padding: 0 0 7px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 0;
+  }
+}
+
+.hero__promo-item--delivery .hero__promo-text {
+  padding: 0 0 6px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 0;
+  }
+}
+
+.hero__button {
+  @media (min-width: $breakpoint-medium) {
+    margin: 0;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin: 0 auto 0 37px;
+  }
+}

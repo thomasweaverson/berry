@@ -1,0 +1,43 @@
+@use "../utils" as *;
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  margin: 0 auto;
+  max-width: 264px;
+  min-height: 56px;
+  border-radius: $border-radius;
+  background-color: $color-bright-dark;
+
+  font-family: "Raleway", sans-serif;
+
+  @include text(
+    $font-size: 20px,
+    $line-height: 1,
+    $color: $color-text-light
+  );
+
+  letter-spacing: 1px;
+
+  box-shadow: $shadow;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-bright;
+  }
+
+  &:active {
+    background-color: $color-bright-soft;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    max-width: 336px;
+    min-height: 68px;
+
+    font-size: 28px;
+    letter-spacing: 1.2px;
+    padding: 12px 12px 12px 18px;
+  }
+}

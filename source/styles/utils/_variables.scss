@@ -23,11 +23,10 @@ $border-radius: 40px;
 $border-radius-small: 20px;
 $border-radius-checkbox: 5px;
 
-$breakpoint-medium: 768px;
-$breakpoint-large: 1300px;
-$breakpoint-mobile-only: 767px;
-
 $shadow-bright: 0 4px 4px 0 rgba(#580d65, 0.5);
 $shadow: 0 4px 4px 0 rgba(#580d65, 0.25);
 $shadow-bright-inset: 0 4px 4px 0 rgba(#580d65, 0.68) inset;
 
+$breakpoint-mobile-only: 767px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1300px;
