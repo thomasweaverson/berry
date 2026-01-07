@@ -7,6 +7,7 @@
 /* common */
 @use "./blocks/section-title";
 @use "./blocks/button";
+@use "./blocks/card";
 
 /* page-header */
 @use "./blocks/page-header";
@@ -23,3 +24,6 @@
 
 /* hero */
 @use "./blocks/hero";
+
+/* catalog */
+@use "./blocks/catalog";

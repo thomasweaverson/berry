@@ -32,12 +32,19 @@
     background-color: $color-bright-soft;
   }
 
-  @media (min-width: $breakpoint-medium) {
-    max-width: 336px;
-    min-height: 68px;
+  &:not(.button--small) {
+    @media (min-width: $breakpoint-medium) {
+      max-width: 336px;
+      min-height: 68px;
 
-    font-size: 28px;
-    letter-spacing: 1.2px;
-    padding: 12px 12px 12px 18px;
+      font-size: 28px;
+      letter-spacing: 1.2px;
+      padding: 12px 12px 12px 18px;
+    }
   }
+}
+
+.button--small {
+  max-width: 220px;
+  min-height: 52px;
 }

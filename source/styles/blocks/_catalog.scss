@@ -1,0 +1,54 @@
+@use "../utils" as *;
+
+.catalog {
+  padding: 62px 28px 60px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 104px 28px 100px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding: 103px 28px 100px;
+  }
+}
+
+.catalog__title {
+  margin: 0 0 73px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin: 0 0 74px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin: 0 0 95px;
+  }
+}
+
+.catalog__list {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 620px) {
+    display: grid;
+    grid-template-columns: repeat(2, $card-width);
+    gap: 52px;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 20px 0 18px;
+  }
+
+  @media (min-width: 980px) {
+    grid-template-columns: repeat(3, $card-width);
+  }
+
+  @media (min-width: $breakpoint-large) {
+    grid-template-columns: repeat(4, $card-width);
+    gap: 52px 24px;
+  }
+}
+
+.catalog__card {
+  max-width: $card-width;
+}
