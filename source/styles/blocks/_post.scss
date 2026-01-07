@@ -1,0 +1,109 @@
+@use "../utils" as *;
+
+.post {
+  max-width: 268px;
+  min-height: 400px;
+  padding: 31px 18px 70px;
+  border: 2px solid $color-accent-dark;
+  border-radius: $border-radius;
+
+  background-image: url("../../icons/post-card-decoration.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 22px center;
+  background-size: 76px 32px;
+
+  @media (min-width: $breakpoint-medium) {
+    max-width: 348px;
+    min-height: 494px;
+    padding: 30px 34px 100px;
+    background-size: 96px 40px;
+    background-position: bottom 40px center;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    max-width: 360px;
+    min-height: 492px;
+    padding: 29px 34px 104px;
+    background-size: 96px 40px;
+    background-position: bottom 42px center;
+  }
+}
+
+.post:nth-child(3) {
+  // ! only for pixel perfect. так как нет живого дизайнера
+  @media (min-width: $breakpoint-medium) {
+    position: relative;
+    left: -5px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    left: 0;
+  }
+}
+
+.post__title {
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 19px;
+
+  @include text(
+    $font-size: 20px,
+    $line-height: 23px,
+    $color: $color-text-dark,
+    $align: center
+  );
+  font-weight: 400;
+
+  @media (min-width: $breakpoint-medium) {
+    min-height: 100px;
+    margin: 0 0 25px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    min-height: 100px;
+    margin: 0 0 23px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.post__text {
+  min-height: 180px;
+  margin: 0 0 11px;
+
+  @include text(
+    $font-size: 14px,
+    $line-height: 16px,
+  );
+
+  @media (min-width: $breakpoint-medium) {
+    min-height: 196px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 16px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin: 0 0 15px;
+  }
+}
+
+.post__date {
+  display: block;
+
+  @include text(
+    $font-size: 14px,
+    $line-height: 16px,
+    $color: $color-text-dark,
+    $align: right
+  );
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

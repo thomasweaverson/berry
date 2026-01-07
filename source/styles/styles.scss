@@ -7,11 +7,10 @@
 /* common */
 @use "./blocks/section-title";
 @use "./blocks/button";
-@use "./blocks/card";
 
 /* page-header */
 @use "./blocks/page-header";
-@use "./blocks/container";
+//! не использован @use "./blocks/container";
 @use "./blocks/logo";
 @use "./blocks/main-navigation";
 
@@ -27,3 +26,8 @@
 
 /* catalog */
 @use "./blocks/catalog";
+@use "./blocks/card";
+
+/* news */
+@use "./blocks/news";
+@use "./blocks/post";

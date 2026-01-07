@@ -29,3 +29,14 @@
   color: $color;
   text-align: $align;
 }
+
+@mixin divider-leaves {
+  background-image: url("../../icons/divider-leaves.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 228px 32px;
+
+  @media (min-width: $breakpoint-medium) {
+    background-size: 296px 42px;
+  }
+}

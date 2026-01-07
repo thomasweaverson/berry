@@ -1,7 +1,7 @@
 @use "../utils" as *;
 
 .catalog {
-  padding: 62px 28px 60px;
+  padding: 62px 28px 65px;
 
   @media (min-width: $breakpoint-medium) {
     padding: 104px 28px 100px;
