@@ -1,0 +1,1 @@
+function c({selector:o=".form__berries",maxItems:n=11,activeClass:r="form__berries--auto-height"}={}){let e=document.querySelector(o);if(!e)return;let t=()=>{e.children.length>n?e.classList.add(r):e.classList.remove(r)};t(),new MutationObserver(t).observe(e,{childList:!0})}export{c as autoHeightByChildren};

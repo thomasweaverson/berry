@@ -1,0 +1,1 @@
+function w({selector:r=".js-responsive-textarea-rows",breakpoint:n=768,rowsSmall:o=2,rowsLarge:s=1}={}){let e=document.querySelectorAll(r);if(!e.length)return;let t=()=>{let i=window.innerWidth>=n?s:o;e.forEach(a=>{a.rows=i})};t(),window.addEventListener("resize",t)}export{w as responsiveTextareaRows};
