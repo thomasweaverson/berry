@@ -82,16 +82,16 @@
 
 .form__fieldset--comment {
   max-width: 320px;
-  margin: 0 auto 4px;
+  margin: 0 auto 12px;
 
   @media (min-width: $breakpoint-medium) {
     max-width: 624px;
-    margin: 0 auto 7px;
+    margin: 0 auto 20px;
   }
 
   @media (min-width: $breakpoint-large) {
     max-width: 788px;
-    margin: 0 auto 15px;
+    margin: 0 auto 28px;
   }
 }
 
@@ -364,7 +364,7 @@
   content: " *";
   color: $color-error;
   font-size: 16px;
-  line-height: 14px;
+  line-height: 13px;
   position: relative;
   top: 1px;
 }
@@ -374,7 +374,7 @@
 
   @media (min-width: $breakpoint-medium) {
     text-align: center;
-    margin: 0 0 43px;
+    margin: 0 auto 43px;
   }
 
   @media (min-width: $breakpoint-large) {
@@ -438,6 +438,7 @@
 .form__input:not([type="checkbox"]):not([type="radio"]) {
   display: block;
   width: 100%;
+  max-height: 52px;
   padding: 16px 12px 16px 11px;
   margin: 0 0 4px;
   border: 1px solid $color-accent-dark;
@@ -466,6 +467,14 @@
 
   &:not(:placeholder-shown):invalid {
     border-color: $color-error;
+  }
+}
+
+.form__field {
+  margin: 0 0 15px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin: 0 0 13px;
   }
 }
 
@@ -548,20 +557,11 @@
 .form__error {
   display: block;
   padding: 0 0 0 12px;
-  margin: 0 0 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: $color-error;
   min-height: 20px;
-
-  &--comment {
-    margin: 0 0 8px;
-  }
-
-  @media (min-width: $breakpoint-medium) {
-    margin: 0 0 13px;
-  }
 }
 

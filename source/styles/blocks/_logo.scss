@@ -2,6 +2,7 @@
 
 .logo {
   display: block;
+  color: $color-accent-dark;
 
   @media (min-width: $breakpoint-medium) {
     display: flex;
@@ -43,22 +44,11 @@
   }
 }
 
-.logo__image--part-interactive {
-  fill: $color-accent-dark;
+.logo:hover,
+.logo:focus-visible {
+  color: $color-accent;
 }
 
-.logo:hover .logo__image--part-interactive,
-.logo:focus-visible .logo__image--part-interactive,
-.logo:hover .logo__text,
-.logo:focus-visible .logo__text {
-  fill: $color-accent;
-}
-
-.logo:active .logo__image--part-interactive,
-.logo:active .logo__text {
-  fill: rgba($color-accent-dark, 0.5);
-}
-
-.logo__image--part-text {
-  display: none;
+.logo:active {
+  color: rgba($color-accent-dark, 0.5);
 }
