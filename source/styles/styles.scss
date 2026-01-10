@@ -8,9 +8,12 @@
 @use "./blocks/section-title";
 @use "./blocks/button";
 
+/* page-body */
+@use "./blocks/page-body";
+
 /* page-header */
 @use "./blocks/page-header";
-//! не использован @use "./blocks/container";
+//! не использован  "./blocks/container";
 @use "./blocks/logo";
 @use "./blocks/main-navigation";
 
@@ -31,3 +34,7 @@
 /* news */
 @use "./blocks/news";
 @use "./blocks/post";
+
+/* order */
+@use "./blocks/order";
+@use "./blocks/form";

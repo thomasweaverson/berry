@@ -7,15 +7,34 @@
 }
 
 .page-footer__contacts {
+  padding: 62px 0 0;
   margin: 0 0 60px;
 
   @media (min-width: $breakpoint-medium) {
+    padding: 73px 0 0;
     margin: 0 0 100px;
   }
 
   @media (min-width: $breakpoint-large) {
     max-width: 1124px;
     margin: 0 auto 100px;
+    padding: 100px 0 0;
+  }
+}
+
+.page-footer__contacts--order {
+  padding: 51px 0 0;
+  margin: 0 auto 64px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 72px 0 0;
+    margin: 0 auto 100px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    max-width: 1124px;
+    margin: 0 auto 100px;
+    padding: 100px 0 0;
   }
 }
 

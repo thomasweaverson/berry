@@ -1,17 +1,16 @@
 @use "../utils" as *;
 
 .contacts {
-  padding: 62px 0 0;
-
-  @media (min-width: $breakpoint-medium) {
-    padding: 73px 0 0;
-  }
-
   @media (min-width: $breakpoint-large) {
     display: grid;
     grid-template-columns: 552px 1fr;
     gap: 22px;
-    padding: 100px 0 0;
+  }
+}
+
+.contacts--order {
+  @media (min-width: $breakpoint-large) {
+    gap: 16px;
   }
 }
 
@@ -45,6 +44,15 @@
   @media (min-width: $breakpoint-large) {
     margin: 0 0 75px;
     line-height: 58px;
+  }
+}
+
+.contacts__title--order {
+  margin: 0 0 64px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin: 0 0 75px;
+    padding: 0;
   }
 }
 

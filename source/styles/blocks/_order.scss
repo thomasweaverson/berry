@@ -1,0 +1,66 @@
+@use "../utils" as *;
+
+.order {
+  margin: 0 0 89px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin: 0 0 100px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin: 0 0 100px;
+  }
+}
+
+.order__promotion {
+  padding: 64px 26px 26px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 108px 26px 35px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding: 109px 26px 45px;
+  }
+}
+
+.order__title {
+  line-height: 40px;
+  margin: 0 0 32px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin: 0 0 58px;
+  }
+}
+
+.order__title-break {
+  @media (min-width: $breakpoint-medium) {
+    display: none;
+  }
+}
+
+.order__description {
+  @include text(
+    $font-size: 16px,
+    $line-height: 19px,
+    $align: center
+  );
+
+  @media (min-width: $breakpoint-medium) {
+    max-width: 530px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    & br {
+      display: none;
+    }
+  }
+}
+
+// .order__form {
+
+// }

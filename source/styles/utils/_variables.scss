@@ -3,8 +3,9 @@ $font-body: "Raleway", sans-serif;
 
 $color-text-dark: #000000;
 $color-text-light: #fbfcfe;
-$color-text-gray: rgba(#8e9892, 0.7);
+$color-text-placeholder: rgba(#8e9892, 0.7);
 
+$color-background-white: #ffffff;
 $color-background-light: #fbfcfe;
 $color-background-medium: #f1f6fc;
 $color-background-dark: rgba(#8e9892, 0.7);
@@ -17,6 +18,7 @@ $color-accent: #7bdb0a;
 $color-accent-dark: #0f805d;
 $color-accent-soft: rgba(#0f805d, 0.5);
 
+$color-disabled: rgba(#8e9892, 0.7);
 $color-error: #ff8282;
 
 $card-width: 264px;

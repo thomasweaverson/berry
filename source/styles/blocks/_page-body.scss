@@ -1,0 +1,9 @@
+@use "../utils" as *;
+
+.page-body {
+  background-color: $color-background-light;
+}
+
+.page-body--order {
+  background-color: $color-background-white;
+}

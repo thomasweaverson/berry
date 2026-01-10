@@ -10,7 +10,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
 
-  <body class="page__body">
+  <body class="page__body page-body page-body--order">
     <header class="page-header page-header--order">
       <div class="page-header__container">
         <a class="page-header__logo logo" href="./index.html">
@@ -85,136 +85,177 @@
     <main class="page-main">
       <section class="order">
         <div class="order__promotion">
-          <h1 class="order__title section-title">Закажи ягоды</h1>
-          <p class="order__description ">
-            Мы соберем для вас ягоды и доставим их в удобном для вас виде - свежими или замороженными
+          <h1 class="order__title section-title">Закажи <br class="order__title-break">ягоды</h1>
+          <p class="order__description">
+            Мы соберем для вас ягоды и&nbsp;доставим их в удобном <br> для вас виде - свежими или
+            замороженными
           </p>
         </div>
 
         <form class="order__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--berries">
             <legend class="form__legend">Выберите ягоды</legend>
             <ul class="form__berries">
               <li class="form__berry">
                 <input class="form__input visually-hidden" type="checkbox" name="cowberry" id="cowberry"
                   value="cowberry">
-                <label class="form__label" for="cowberry">брусника</label>
+                <label class="form__label" for="cowberry"><span class="form__input-icon"></span><span
+                    class="form__input-text">брусника</span></label>
               </li>
               <li class="form__berry">
                 <input class="form__input visually-hidden" type="checkbox" name="cherry" id="cherry" value="cherry">
-                <label class="form__label" for="cherry">вишня</label>
+                <label class="form__label" for="cherry"><span class="form__input-icon"></span><span
+                    class="form__input-text">вишня</span></label>
               </li>
               <li class="form__berry">
                 <input class="form__input visually-hidden" type="checkbox" name="blueberry" id="blueberry"
                   value="blueberry">
-                <label class="form__label" for="blueberry">голубика</label>
+
+                <label class="form__label" for="blueberry"><span class="form__input-icon"></span><span
+                    class="form__input-text">голубика</span></label>
               </li>
               <li class="form__berry">
                 <input class="form__input visually-hidden" type="checkbox" name="bramble" id="bramble" value="bramble">
-                <label class="form__label" for="bramble">ежевика</label>
+
+                <label class="form__label" for="bramble"><span class="form__input-icon"></span><span
+                    class="form__input-text">ежевика</span></label>
               </li>
               <li class="form__berry">
                 <input class="form__input visually-hidden" type="checkbox" name="strawberry" id="strawberry"
                   value="strawberry">
-                <label class="form__label" for="strawberry">клубника</label>
+
+                <label class="form__label" for="strawberry"><span class="form__input-icon"></span><span
+                    class="form__input-text">клубника</span></label>
               </li>
               <li class="form__berry">
                 <input class="form__input visually-hidden" type="checkbox" name="cranberry" id="cranberry"
                   value="cranberry">
-                <label class="form__label" for="cranberry">клюква</label>
+
+                <label class="form__label" for="cranberry"><span class="form__input-icon"></span><span
+                    class="form__input-text">клюква</span></label>
               </li>
               <li class="form__berry">
                 <input class="form__input visually-hidden" type="checkbox" name="gooseberry" id="gooseberry"
                   value="gooseberry">
-                <label class="form__label" for="gooseberry">крыжовник</label>
+                <label class="form__label" for="gooseberry"><span class="form__input-icon"></span><span
+                    class="form__input-text">крыжовник</span></label>
               </li>
               <li class="form__berry">
                 <input class="form__input visually-hidden" type="checkbox" name="raspberry" id="raspberry"
                   value="raspberry">
-                <label class="form__label" for="raspberry">малина</label>
+                <label class="form__label" for="raspberry"><span class="form__input-icon"></span><span
+                    class="form__input-text">малина</span></label>
               </li>
               <li class="form__berry">
                 <input class="form__input visually-hidden" type="checkbox" name="cloudberry" id="cloudberry"
                   value="cloudberry" disabled>
-                <label class="form__label" for="cloudberry">морошка</label>
+
+                <label class="form__label" for="cloudberry"><span class="form__input-icon"></span><span
+                    class="form__input-text">морошка</span></label>
               </li>
               <li class="form__berry">
                 <input class="form__input visually-hidden" type="checkbox" name="blackberry" id="blackberry"
                   value="blackberry" disabled>
-                <label class="form__label" for="blackberry">черника</label>
+
+                <label class="form__label" for="blackberry"><span class="form__input-icon"></span><span
+                    class="form__input-text">черника</span></label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--storage">
             <legend class="form__legend">Вид хранения</legend>
             <ul class="form__storage-list">
               <li class="form__storage-item">
                 <input class="form__input visually-hidden" type="checkbox" name="storage-type" id="fresh" value="fresh">
-                <label class="form__label" for="fresh">свежие ягоды</label>
+
+                <label class="form__label" for="fresh"><span class="form__input-icon"></span><span
+                    class="form__input-text">свежие ягоды</span></label>
               </li>
 
               <li class="form__storage-item">
                 <input class="form__input visually-hidden" type="checkbox" name="storage-type" id="frozen"
                   value="frozen">
-                <label class="form__label" for="frozen">замороженные ягоды</label>
+
+                <label class="form__label" for="frozen"><span class="form__input-icon"></span><span
+                    class="form__input-text">замороженные&nbsp;ягоды</span></label>
               </li>
 
               <li class="form__storage-item">
                 <input class="form__input visually-hidden" type="checkbox" name="storage-type" id="mixed" value="mixed">
-                <label class="form__label" for="mixed">ягодные миксы</label>
+
+                <label class="form__label" for="mixed"><span class="form__input-icon"></span><span
+                    class="form__input-text">ягодные миксы</span></label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Способ доставки</legend>
+          <fieldset class="form__fieldset form__fieldset--delivery">
+            <legend class="form__legend form__legend--delivery">Способ доставки</legend>
             <ul class="form__delivery-list">
               <li class="form__delivery-item">
                 <input class="form__input visually-hidden" type="radio" name="delivery-type" id="delivery"
-                  value="delivery">
-                <label class="form__label" for="pickup">Доставка (по СПБ в пределах КАД)</label>
+                  value="delivery" checked>
+
+                <label class="form__label" for="delivery">
+                  <span class="form__input-icon"></span>
+                  <span class="form__input-text">Доставка <br>(по СПБ в пределах<br
+                      class="form__label-br">&nbsp;КАД)</span>
+                </label>
               </li>
 
               <li class="form__delivery-item">
                 <input class="form__input visually-hidden" type="radio" name="delivery-type" id="pickup" value="pickup">
-                <label class="form__label" for="pickup">Самовывоз</label>
+
+                <label class="form__label" for="pickup">
+                  <span class="form__input-icon"></span>
+                  <span class="form__input-text">Самовывоз<br>(Набережная Обводного <br class="form__label-br">канала,
+                    101)</span>
+                </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Ваши контакты</legend>
+          <fieldset class="form__fieldset form__fieldset--contact">
+            <legend class="form__legend form__legend--contact">Ваши контакты</legend>
             <ul class="form__contact-list">
               <li class="form__field">
                 <label class="form__label form__label--contact form__label--required" for="name">Имя</label>
-                <input class="form__input" type="text" name="name" placeholder="Как к вам обращаться?" id="name"
-                  required>
+                <input class="form__input" type="text" autocomplete="username" name="name"
+                  placeholder="Как к вам обращаться?" id="name" required minlength="2" maxlength="99">
+                <i class="form__error">пример подсказки</i>
               </li>
 
-              <li class="form__field">
+              <li class="form__field form__field--phone">
                 <label class="form__label form__label--contact form__label--required" for="phone">Телефон</label>
-                <input class="form__input" type="tel" name="phone" placeholder="+7 ххх ххх хх хх" id="phone" required>
+                <input class="form__input" type="tel" autocomplete="tel" name="phone" placeholder="+7 ххх ххх хх хх"
+                  id="phone" required pattern="^\+?[0-9]{4,15}$">
+                <i class="form__error"></i>
               </li>
 
               <li class="form__field">
                 <label class="form__label form__label--contact form__label--required" for="email">Email</label>
-                <input class="form__input" type="email" name="email" placeholder="Ваш email" id="email" required>
+                <input class="form__input" type="email" autocomplete="email" name="email" placeholder="Ваш email"
+                  id="email" required>
+                <i class="form__error"></i>
               </li>
 
-              <li class="form__field">
+              <li class="form__field form__field--address">
                 <label class="form__label form__label--contact form__label--required" for="address">Адрес</label>
-                <input class="form__input" type="text" name="address" placeholder="Адрес в Санкт-Петербурге"
-                  id="address" required>
+                <textarea class="form__textarea js-responsive-textarea-rows" rows="2" name="address" autocomplete="address"
+                  placeholder="Адрес в Санкт-Петербурге" id="address" minlength="3" required></textarea>
+                <i class="form__error"></i>
               </li>
             </ul>
 
           </fieldset>
-          <fieldset class="form__fieldset">
+
+          <fieldset class="form__fieldset form__fieldset--comment">
             <legend class="visually-hidden">Комментарии</legend>
-            <label class="form__label" for="comment">Пожелания к заказу</label>
-            <textarea class="form__textarea" name="comment" placeholder="Чем мы можем вам помочь?"
-              id="comment"></textarea>
+            <label class="form__label form__label--comment" for="comment">Пожелания к заказу</label>
+            <textarea class="form__textarea form__textarea--comment" name="comment"
+              placeholder="Чем мы можем вам помочь?" id="comment"></textarea>
+            <i class="form__error form__error--comment"></i>
           </fieldset>
 
           <button class="form__button button" type="submit">Заказать</button>
@@ -224,10 +265,10 @@
     </main>
 
     <footer class="page-footer">
-      <section class="page-footer__contacts contacts">
+      <section class="page-footer__contacts page-footer__contacts--order contacts contacts--order">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
-          <p class="contacts__title section-title">Где забрать&nbsp;<br>ягоды?</p>
+          <p class="contacts__title contacts__title--order section-title">Где забрать&nbsp;<br>ягоды?</p>
           <p class="contacts__text">Забери ягоды с нашего склада по&nbsp;адресу: </p>
           <ul class="contacts__list">
             <li class="contacts__item">

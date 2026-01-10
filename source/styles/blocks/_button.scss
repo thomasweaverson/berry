@@ -8,9 +8,11 @@
   margin: 0 auto;
   max-width: 264px;
   min-height: 56px;
+  border: none;
   border-radius: $border-radius;
   background-color: $color-bright-dark;
 
+  cursor: pointer;
   font-family: "Raleway", sans-serif;
 
   @include text(
@@ -23,12 +25,18 @@
 
   box-shadow: $shadow;
 
-  &:hover,
-  &:focus-visible {
+  &:disabled {
+    background-color: $color-disabled;
+    box-shadow: none;
+    cursor: default;
+  }
+
+  &:not(:disabled):hover,
+  &:not(:disabled):focus-visible {
     background-color: $color-bright;
   }
 
-  &:active {
+  &:not(:disabled):active {
     background-color: $color-bright-soft;
   }
 
