@@ -54,33 +54,22 @@
 
 .page-header__container {
   position: relative;
-  max-width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: $breakpoint-medium) {
-    max-width: 716px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $breakpoint-large) {
-    max-width: 1128px;
-  }
 }
 
 .page-header__logo {
   position: absolute;
-  left: 26px;
+  left: -1px;
   top: 8px;
 
   @media (min-width: $breakpoint-medium) {
-    left: 0;
+    left: -1px;
     top: 0;
   }
 }
 
 .page-header__toggler {
   position: absolute;
-  right: 21px;
+  right: -6px;
   top: 4px;
 
   display: flex;

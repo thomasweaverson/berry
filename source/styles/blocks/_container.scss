@@ -1,0 +1,27 @@
+@use "../utils" as *;
+
+.container {
+  position: relative;
+  max-width: 266px;
+  margin: 0 auto;
+
+  @media (min-width: $breakpoint-medium) {
+    max-width: 716px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    max-width: 1128px;
+  }
+}
+
+.container--order-form {
+  max-width: 268px;
+
+  @media (min-width: $breakpoint-medium) {
+    max-width: 624px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    max-width: 792px;
+  }
+}

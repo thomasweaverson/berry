@@ -43,19 +43,20 @@
 }
 
 .page-footer__container {
+  @media (max-width: $breakpoint-mobile-only) {
+    max-width: 268px;
+  }
+
   position: relative;
-  padding: 20px 26px 20px 100px;
+  padding: 20px 0 20px 100px;
 
   @media (min-width: $breakpoint-medium) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-    padding: 36px 26px 28px 40px;
+    padding: 36px 0 28px 14px;
   }
 
   @media (min-width: $breakpoint-large) {
-    max-width: 1128px;
-    margin: 0 auto;
     padding: 34px 3px 34px 18px;
   }
 }
@@ -63,11 +64,11 @@
 .page-footer__logo {
   position: absolute;
   top: 11px;
-  left: 26px;
+  left: 0;
 
   @media (min-width: $breakpoint-medium) {
     top: 22px;
-    left: 20px;
+    left: -6px;
   }
 
   @media (min-width: $breakpoint-large) {

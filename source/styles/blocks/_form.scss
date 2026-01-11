@@ -1,16 +1,16 @@
 @use "../utils" as *;
 
 .form {
-  padding: 84px 26px 0;
+  padding: 84px 0 0;
 
   @include divider-leaves;
 
   @media (min-width: $breakpoint-medium) {
-    padding: 118px 26px 0;
+    padding: 118px 0 0;
   }
 
   @media (min-width: $breakpoint-large) {
-    padding: 107px 26px 0;
+    padding: 107px 0 0;
   }
 }
 
@@ -21,7 +21,6 @@
 }
 
 .form__fieldset--berries {
-  max-width: 320px;
   margin: 0 auto 34px;
 
   @media (min-width: $breakpoint-medium) {
@@ -36,7 +35,6 @@
 }
 
 .form__fieldset--storage {
-  max-width: 320px;
   margin: 0 auto 11px;
 
   @media (min-width: $breakpoint-medium) {
@@ -51,7 +49,6 @@
 }
 
 .form__fieldset--delivery {
-  max-width: 320px;
   margin: 0 auto 36px;
 
   @media (min-width: $breakpoint-medium) {
@@ -66,11 +63,9 @@
 }
 
 .form__fieldset--contact {
-  max-width: 320px;
   margin: 0 auto 3px;
 
   @media (min-width: $breakpoint-medium) {
-    max-width: 624px;
     margin: 0 auto 4px;
   }
 
@@ -81,11 +76,9 @@
 }
 
 .form__fieldset--comment {
-  max-width: 320px;
   margin: 0 auto 12px;
 
   @media (min-width: $breakpoint-medium) {
-    max-width: 624px;
     margin: 0 auto 20px;
   }
 

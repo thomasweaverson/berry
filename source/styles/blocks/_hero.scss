@@ -5,11 +5,11 @@
   background-color: $color-background-light;
 
   @media (min-width: $breakpoint-medium) {
-    padding: 150px 22px 60px 27.7%;
+    padding: 150px 27px 60px;
   }
 
   @media (min-width: $breakpoint-large) {
-    padding: 181px 112px 60px 300px;
+    padding: 181px 110px 60px;
   }
 }
 
@@ -64,14 +64,10 @@
 }
 
 .hero__wrapper {
-  @media (min-width: $breakpoint-medium) {
-    max-width: 533px;
-    margin: auto 0 0;
-  }
+  position: relative;
 
-  @media (min-width: $breakpoint-large) {
-    max-width: 550px;
-    margin: 0 auto;
+  @media (min-width: $breakpoint-medium) {
+    padding: 0 0 0 186px;
   }
 }
 
@@ -86,12 +82,7 @@
 
   @media (min-width: $breakpoint-large) {
     margin: 0 0 61px;
-  }
-}
-
-.hero__title-break {
-  @media (min-width: 600px) {
-    display: none;
+    text-align: center;
   }
 }
 
@@ -183,6 +174,6 @@
   }
 
   @media (min-width: $breakpoint-large) {
-    margin: 0 auto 0 37px;
+    margin: 0 0 0 234px;
   }
 }
