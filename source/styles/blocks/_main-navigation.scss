@@ -12,6 +12,12 @@
   }
 }
 
+.main-navigation--nojs {
+  @media (max-width: $breakpoint-mobile-only) {
+    padding: 12px 24px 18px;
+  }
+}
+
 .main-navigation__list {
   margin: 0;
   padding: 0;
@@ -45,7 +51,6 @@
   &:not(.main-navigation__link--current):active {
     color: $color-accent-dark;
   }
-
 
   @media (min-width: $breakpoint-medium) {
     padding: 22px 16px 18px;

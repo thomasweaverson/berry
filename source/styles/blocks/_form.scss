@@ -514,7 +514,7 @@
     outline: none;
   }
 
-  &:not(:placeholder-shown):invalid {
+  &:not(:placeholder-shown):not(.form__textarea--comment):invalid {
     border-color: $color-error;
   }
 
