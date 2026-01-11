@@ -44,11 +44,11 @@
   }
 }
 
-.logo:hover,
-.logo:focus-visible {
+.logo:not(.logo--disabled):hover,
+.logo:not(.logo--disabled):focus-visible {
   color: $color-accent;
 }
 
-.logo:active {
+.logo:not(.logo--disabled):active {
   color: rgba($color-accent-dark, 0.5);
 }

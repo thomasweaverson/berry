@@ -22,19 +22,19 @@
   height: 32px;
   border: 1px solid $color-accent-dark;
   border-radius: 50%;
-  fill: $color-accent-dark;
+  color: $color-accent-dark;
 
   &:hover,
   &:focus-visible {
     border-color: $color-accent;
-    fill: $color-accent;
+    color: $color-accent;
 
     outline-offset: 8px;
   }
 
   &:active {
     border-color: rgba($color-accent-dark, 0.5);
-    fill: rgba($color-accent-dark, 0.5);
+    color: rgba($color-accent-dark, 0.5);
   }
 
   @media (min-width: $breakpoint-medium) {
