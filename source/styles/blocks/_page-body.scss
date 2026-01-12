@@ -2,8 +2,37 @@
 
 .page-body {
   background-color: $color-background-light;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .page-body--order {
   background-color: $color-background-white;
+}
+
+.page-body__main--dummy {
+  padding: 60px;
+}
+
+.page-body__product-wrapper--dummy {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.page-body__return-link--dummy {
+  font-size: 24px;
+  line-height: 28px;
+  color: $color-text-dark;
+  text-align: center;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-accent;
+  }
+
+  &:active {
+    color: rgba($color-accent-dark, 0.5);
+  }
 }
