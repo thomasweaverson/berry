@@ -1,9 +1,6 @@
 @use "../utils" as *;
 
 .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
   padding: 0 0 54px;
   border-radius: $border-radius;
   overflow: hidden;
@@ -15,7 +12,9 @@
 }
 
 .card__title {
-  margin: 0 0 29px;
+  width: fit-content;
+  margin: 0 auto 17px;
+  padding: 12px 24px;
   font-size: 28px;
   color: $color-accent-dark;
   text-align: center;
@@ -23,22 +22,45 @@
 }
 
 .card__link {
-  position: static;
+  display: flex;
+  flex-direction: column;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+.card__link:focus-visible {
+  outline: none;
+}
+
+.card__link:hover .card__title {
+  color: $color-accent;
+}
+
+.card__link:focus-visible .card__title {
+  color: $color-accent;
+
+  outline: 2px solid $color-bright-dark;
+  outline-offset: -2px;
+  border-radius: 10px;
+}
+
+.card__link:active .card__title {
+  color: rgba($color-accent-dark, 0.5);
 }
 
 .card__image-wrapper {
   order: -1;
-  margin: 0 0 31px;
+  margin: 0 0 19px;
+}
+
+.card__link:hover .card__image-wrapper {
+  filter: brightness(1.2);
+}
+
+.card__link:focus-visible .card__image-wrapper {
+  filter: brightness(1.2);
+}
+
+.card__link:active .card__image-wrapper {
+  filter: brightness(0.9);
 }
 
 .card__wrapper {
