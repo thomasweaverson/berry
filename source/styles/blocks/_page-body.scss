@@ -21,6 +21,13 @@
   flex-direction: column;
 }
 
+.page-body__text--dummy {
+  font-size: 24px;
+  line-height: 28px;
+  color: $color-text-dark;
+  text-align: center;
+}
+
 .page-body__return-link--dummy {
   font-size: 24px;
   line-height: 28px;
