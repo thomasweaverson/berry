@@ -13,7 +13,7 @@
   background-color: $color-bright-dark;
 
   cursor: pointer;
-  font-family: "Raleway", sans-serif;
+  font-family: $font-body;
 
   @include text(
     $font-size: 20px,
