@@ -38,6 +38,7 @@
 .main-navigation__link {
   display: block;
   padding: 16px;
+  width: fit-content;
 
   @include text(20px);
   overflow-wrap: break-word;

@@ -48,16 +48,16 @@
   }
 
   position: relative;
-  padding: 20px 0 20px 100px;
+  padding: 20px 0 9px 100px;
 
   @media (min-width: $breakpoint-medium) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 36px 0 28px 14px;
+    padding: 29px 0 23px 14px;
   }
 
   @media (min-width: $breakpoint-large) {
-    padding: 34px 3px 34px 18px;
+    padding: 30px 3px 29px 18px;
   }
 }
 
@@ -78,7 +78,7 @@
 }
 
 .page-footer__social-wrapper {
-  margin: 0 0 20px auto;
+  margin: 0 0 10px auto;
   max-width: fit-content;
 
   @media (min-width: $breakpoint-medium) {
@@ -86,11 +86,17 @@
     grid-row: 1 / 2;
     justify-self: center;
     margin: 0;
+    padding: 7px 0 0;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding: 4px 0 0;
   }
 }
 
 .page-footer__copyright {
   margin: 0 0 0 auto;
+  align-self: flex-start;
 
   @media (min-width: $breakpoint-medium) {
     grid-column: 2 / 3;
