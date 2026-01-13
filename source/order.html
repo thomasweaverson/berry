@@ -8,10 +8,11 @@
 
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml" sizes="any">
-    <link rel="apple-touch-icon" href="./favicons/apple.png"> <!-- 180×180 -->
+    <link rel="apple-touch-icon" href="./favicons/apple.png"><!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
 
-    <link rel="preload" href="#" type="font/woff2" as="font">
+    <link rel="preload" href="./fonts/comfortaa/comfortaa.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/raleway/raleway.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -22,20 +23,20 @@
         <a class="page-header__logo logo" href="./index.html">
           <span class="visually-hidden">Магазин ягод</span>
           <svg class="logo__image logo__image--header" width="52" height="52" aria-hidden="true">
-            <use xlink:href="./icons/stack.svg#logo-berry"></use>
+            <use href="./icons/stack.svg#logo-berry"></use>
           </svg>
           <svg class="logo__text" width="75" height="60" aria-hidden="true">
-            <use xlink:href="./icons/stack.svg#logo-text"></use>
+            <use href="./icons/stack.svg#logo-text"></use>
           </svg>
         </a>
 
         <button class="page-header__toggler page-header__toggler--closed page-header__toggler--nojs" type="button">
           <span class="visually-hidden">Открыть/закрыть меню</span>
           <svg class="page-header__toggler-icon page-header__toggler-icon--closed" width="60" height="60">
-            <use xlink:href="./icons/stack.svg#toggler-closed"></use>
+            <use href="./icons/stack.svg#toggler-closed"></use>
           </svg>
           <svg class="page-header__toggler-icon page-header__toggler-icon--opened" width="28" height="28">
-            <use xlink:href="./icons/stack.svg#toggler-opened"></use>
+            <use href="./icons/stack.svg#toggler-opened"></use>
           </svg>
         </button>
 
@@ -51,7 +52,8 @@
               <a class="main-navigation__link" href="#">Контакты</a>
             </li>
             <li class="main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--current" aria-current="page">Заказать</a>
+              <a class="main-navigation__link main-navigation__link--current" href="#" aria-hidden="true" tabindex="-1"
+                onclick="return false">Заказать</a>
             </li>
           </ul>
         </nav>
@@ -62,9 +64,9 @@
       <section class="order">
         <div class="order__wrapper container container--order-form">
           <div class="order__promotion">
-            <h2 class="order__title section-title">Закажи <br class="order__title-break">ягоды</h2>
+            <h2 class="order__title section-title">Закажи ягоды</h2>
             <p class="order__description">
-              Мы соберем для вас ягоды и&nbsp;доставим их в удобном <br> для вас виде - свежими или
+              Мы соберем для вас ягоды и&nbsp;доставим их в удобном <br>для вас виде - свежими или
               замороженными
             </p>
           </div>
@@ -251,12 +253,12 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <p class="contacts__title contacts__title--order section-title">Где забрать&nbsp;<br>ягоды?</p>
-          <p class="contacts__text">Забери ягоды с нашего склада по&nbsp;адресу: </p>
+          <p class="contacts__text">Забери ягоды с нашего склада по&nbsp;адресу:</p>
           <ul class="contacts__list">
             <li class="contacts__item">
               <a class="contacts__contact contacts__contact--link" href="https://yandex.ru/maps/-/CLXF7E8J">
                 <svg width="32" height="32" aria-hidden="true">
-                  <use xlink:href="./icons/stack.svg#leaf"></use>
+                  <use href="./icons/stack.svg#leaf"></use>
                 </svg>
                 <span class="contacts__value">Набережная Обводного канала, 101</span>
               </a>
@@ -264,7 +266,7 @@
             <li class="contacts__item">
               <a class="contacts__contact contacts__contact--link contacts__contact--phone" href="tel:+79105244118">
                 <svg width="32" height="32" aria-hidden="true">
-                  <use xlink:href="./icons/stack.svg#call"></use>
+                  <use href="./icons/stack.svg#call"></use>
                 </svg>
                 <span class="contacts__value">+ 7 910 524 41 18</span>
               </a>
@@ -272,7 +274,7 @@
             <li class="contacts__item">
               <a class="contacts__contact contacts__contact--link contacts__contact--mail" href="mailto:info@yagoda.ru">
                 <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <use xlink:href="./icons/stack.svg#mail"></use>
+                  <use href="./icons/stack.svg#mail"></use>
                 </svg>
                 <span class="contacts__value">info@yagoda.ru</span>
               </a>
@@ -291,10 +293,10 @@
           <a class="page-footer__logo logo" href="./index.html">
             <span class="visually-hidden">Магазин ягод</span>
             <svg class="logo__image" width="52" height="52" aria-hidden="true">
-              <use xlink:href="./icons/stack.svg#logo-berry"></use>
+              <use href="./icons/stack.svg#logo-berry"></use>
             </svg>
             <svg class="logo__text" width="75" height="60" aria-hidden="true">
-              <use xlink:href="./icons/stack.svg#logo-text"></use>
+              <use href="./icons/stack.svg#logo-text"></use>
             </svg>
           </a>
 
@@ -304,7 +306,7 @@
                 <a class="social__link" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Телеграм</span>
                   <svg class="social__icon" width="26" height="26" aria-hidden="true">
-                    <use xlink:href="./icons/stack.svg#telegram"></use>
+                    <use href="./icons/stack.svg#telegram"></use>
                   </svg>
                 </a>
               </li>
@@ -312,7 +314,7 @@
                 <a class="social__link" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Вконтакте</span>
                   <svg class="social__icon" width="24" height="18" aria-hidden="true">
-                    <use xlink:href="./icons/stack.svg#vkontakte"></use>
+                    <use href="./icons/stack.svg#vkontakte"></use>
                   </svg>
                 </a>
               </li>
@@ -320,7 +322,7 @@
                 <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Ютуб</span>
                   <svg class="social__icon" width="24" height="24" aria-hidden="true">
-                    <use xlink:href="./icons/stack.svg#youtube"></use>
+                    <use href="./icons/stack.svg#youtube"></use>
                   </svg>
                 </a>
               </li>

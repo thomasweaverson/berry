@@ -8,12 +8,11 @@
 
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml" sizes="any">
-    <link rel="apple-touch-icon" href="./favicons/apple.png"> <!-- 180×180 -->
+    <link rel="apple-touch-icon" href="./favicons/apple.png"><!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
 
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="preload" href="./fonts/comfortaa/comfortaa.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="./fonts/raleway/raleway.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/comfortaa/comfortaa.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/raleway/raleway.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -21,23 +20,23 @@
   <body class="page__body page-body">
     <header class="page-header page-body__header">
       <div class="page-header__container container">
-        <a class="page-header__logo logo logo--disabled" aria-current="page">
+        <a class="page-header__logo logo logo--disabled" href="#" aria-hidden="true" tabindex="-1" onclick="return false">
           <span class="visually-hidden">Магазин ягод</span>
           <svg class="logo__image logo__image--header" width="52" height="52" aria-hidden="true">
-            <use xlink:href="./icons/stack.svg#logo-berry"></use>
+            <use href="./icons/stack.svg#logo-berry"></use>
           </svg>
           <svg class="logo__text" width="75" height="60" aria-hidden="true">
-            <use xlink:href="./icons/stack.svg#logo-text"></use>
+            <use href="./icons/stack.svg#logo-text"></use>
           </svg>
         </a>
 
         <button class="page-header__toggler page-header__toggler--closed page-header__toggler--nojs" type="button">
           <span class="visually-hidden">Открыть/закрыть меню</span>
           <svg class="page-header__toggler-icon page-header__toggler-icon--closed" width="60" height="60">
-            <use xlink:href="./icons/stack.svg#toggler-closed"></use>
+            <use href="./icons/stack.svg#toggler-closed"></use>
           </svg>
           <svg class="page-header__toggler-icon page-header__toggler-icon--opened" width="28" height="28">
-            <use xlink:href="./icons/stack.svg#toggler-opened"></use>
+            <use href="./icons/stack.svg#toggler-opened"></use>
           </svg>
         </button>
 
@@ -89,7 +88,8 @@
                 <h3 class="card__title">Малина</h3>
                 <div class="card__image-wrapper">
                   <picture>
-                    <source type="image/webp" srcset="./images/raspberry@1x.webp 1x, ./images/raspberry@2x.webp 2x">
+                    <source type="image/webp" width="264" height="180"
+                      srcset="./images/raspberry@1x.webp 1x, ./images/raspberry@2x.webp 2x">
                     <img class="card__image" src="images/raspberry@1x.jpg" srcset="./images/raspberry@2x.jpg"
                       width="264" height="180" alt="">
                   </picture>
@@ -106,7 +106,8 @@
                 <h3 class="card__title">Ежевика</h3>
                 <div class="card__image-wrapper">
                   <picture>
-                    <source type="image/webp" srcset="./images/bramble@1x.webp 1x, ./images/bramble@2x.webp 2x">
+                    <source type="image/webp" width="264" height="180"
+                      srcset="./images/bramble@1x.webp 1x, ./images/bramble@2x.webp 2x">
                     <img class="card__image" src="images/bramble@1x.jpg" srcset="./images/bramble@2x.jpg" width="264"
                       height="180" alt="">
                   </picture>
@@ -123,7 +124,8 @@
                 <h3 class="card__title">Брусника</h3>
                 <div class="card__image-wrapper">
                   <picture>
-                    <source type="image/webp" srcset="./images/cowberry@1x.webp 1x, ./images/cowberry@2x.webp 2x">
+                    <source type="image/webp" width="264" height="180"
+                      srcset="./images/cowberry@1x.webp 1x, ./images/cowberry@2x.webp 2x">
                     <img class="card__image" src="images/cowberry@1x.jpg" srcset="./images/cowberry@2x.jpg" width="264"
                       height="180" alt="">
                   </picture>
@@ -139,7 +141,8 @@
                 <h3 class="card__title">Клубника</h3>
                 <div class="card__image-wrapper">
                   <picture>
-                    <source type="image/webp" srcset="./images/strawberry@1x.webp 1x, ./images/strawberry@2x.webp 2x">
+                    <source type="image/webp" width="264" height="180"
+                      srcset="./images/strawberry@1x.webp 1x, ./images/strawberry@2x.webp 2x">
                     <img class="card__image" src="images/strawberry@1x.jpg" srcset="./images/strawberry@2x.jpg"
                       width="264" height="180" alt="">
                   </picture>
@@ -155,7 +158,8 @@
                 <h3 class="card__title">Вишня</h3>
                 <div class="card__image-wrapper">
                   <picture>
-                    <source type="image/webp" srcset="./images/cherry@1x.webp 1x, ./images/cherry@2x.webp 2x">
+                    <source type="image/webp" width="264" height="180"
+                      srcset="./images/cherry@1x.webp 1x, ./images/cherry@2x.webp 2x">
                     <img class="card__image" src="images/cherry@1x.jpg" srcset="./images/cherry@2x.jpg" width="264"
                       height="180" alt="">
                   </picture>
@@ -171,7 +175,8 @@
                 <h3 class="card__title">Крыжовник</h3>
                 <div class="card__image-wrapper">
                   <picture>
-                    <source type="image/webp" srcset="./images/gooseberry@1x.webp 1x, ./images/gooseberry@2x.webp 2x">
+                    <source type="image/webp" width="264" height="180"
+                      srcset="./images/gooseberry@1x.webp 1x, ./images/gooseberry@2x.webp 2x">
                     <img class="card__image" src="images/gooseberry@1x.jpg" srcset="./images/gooseberry@2x.jpg"
                       width="264" height="180" alt="">
                   </picture>
@@ -187,7 +192,8 @@
                 <h3 class="card__title">Голубика</h3>
                 <div class="card__image-wrapper">
                   <picture>
-                    <source type="image/webp" srcset="./images/blueberry@1x.webp 1x, ./images/blueberry@2x.webp 2x">
+                    <source type="image/webp" width="264" height="180"
+                      srcset="./images/blueberry@1x.webp 1x, ./images/blueberry@2x.webp 2x">
                     <img class="card__image" src="images/blueberry@1x.jpg" srcset="./images/blueberry@2x.jpg"
                       width="264" height="180" alt="">
                   </picture>
@@ -203,7 +209,8 @@
                 <h3 class="card__title">Клюква</h3>
                 <div class="card__image-wrapper">
                   <picture>
-                    <source type="image/webp" srcset="./images/cranberry@1x.webp 1x, ./images/cranberry@2x.webp 2x">
+                    <source type="image/webp" width="264" height="180"
+                      srcset="./images/cranberry@1x.webp 1x, ./images/cranberry@2x.webp 2x">
                     <img class="card__image" src="images/cranberry@1x.jpg" srcset="./images/cranberry@2x.jpg"
                       width="264" height="180" alt="">
                   </picture>
@@ -265,12 +272,12 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <p class="contacts__title section-title">Где забрать&nbsp;<br>ягоды?</p>
-          <p class="contacts__text">Забери ягоды с нашего склада по&nbsp;адресу: </p>
+          <p class="contacts__text">Забери ягоды с нашего склада по&nbsp;адресу:</p>
           <ul class="contacts__list">
             <li class="contacts__item">
               <a class="contacts__contact contacts__contact--link" href="https://yandex.ru/maps/-/CLXF7E8J">
                 <svg width="32" height="32" aria-hidden="true">
-                  <use xlink:href="./icons/stack.svg#leaf"></use>
+                  <use href="./icons/stack.svg#leaf"></use>
                 </svg>
                 <span class="contacts__value">Набережная Обводного канала, 101</span>
               </a>
@@ -278,7 +285,7 @@
             <li class="contacts__item">
               <a class="contacts__contact contacts__contact--link contacts__contact--phone" href="tel:+79105244118">
                 <svg width="32" height="32" aria-hidden="true">
-                  <use xlink:href="./icons/stack.svg#call"></use>
+                  <use href="./icons/stack.svg#call"></use>
                 </svg>
                 <span class="contacts__value">+ 7 910 524 41 18</span>
               </a>
@@ -286,7 +293,7 @@
             <li class="contacts__item">
               <a class="contacts__contact contacts__contact--link contacts__contact--mail" href="mailto:info@yagoda.ru">
                 <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <use xlink:href="./icons/stack.svg#mail"></use>
+                  <use href="./icons/stack.svg#mail"></use>
                 </svg>
                 <span class="contacts__value">info@yagoda.ru</span>
               </a>
@@ -302,13 +309,13 @@
 
       <div class="page-footer__wrapper">
         <div class="page-footer__container container">
-          <a class="page-footer__logo logo logo--disabled" aria-current="page">
+          <a class="page-footer__logo logo logo--disabled" href="#" aria-hidden="true" tabindex="-1" onclick="return false">
             <span class="visually-hidden">Магазин ягод</span>
             <svg class="logo__image" width="52" height="52" aria-hidden="true">
-              <use xlink:href="./icons/stack.svg#logo-berry"></use>
+              <use href="./icons/stack.svg#logo-berry"></use>
             </svg>
             <svg class="logo__text" width="75" height="60" aria-hidden="true">
-              <use xlink:href="./icons/stack.svg#logo-text"></use>
+              <use href="./icons/stack.svg#logo-text"></use>
             </svg>
           </a>
 
@@ -318,7 +325,7 @@
                 <a class="social__link" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Телеграм</span>
                   <svg class="social__icon" width="26" height="26" aria-hidden="true">
-                    <use xlink:href="./icons/stack.svg#telegram"></use>
+                    <use href="./icons/stack.svg#telegram"></use>
                   </svg>
                 </a>
               </li>
@@ -326,7 +333,7 @@
                 <a class="social__link" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Вконтакте</span>
                   <svg class="social__icon" width="24" height="18" aria-hidden="true">
-                    <use xlink:href="./icons/stack.svg#vkontakte"></use>
+                    <use href="./icons/stack.svg#vkontakte"></use>
                   </svg>
                 </a>
               </li>
@@ -334,7 +341,7 @@
                 <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Ютуб</span>
                   <svg class="social__icon" width="24" height="24" aria-hidden="true">
-                    <use xlink:href="./icons/stack.svg#youtube"></use>
+                    <use href="./icons/stack.svg#youtube"></use>
                   </svg>
                 </a>
               </li>

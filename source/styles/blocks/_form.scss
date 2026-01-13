@@ -132,17 +132,22 @@
   column-gap: 20px;
   column-fill: auto;
 
+  max-width: 268px;
+
   @media (min-width: $breakpoint-medium) {
     height: auto;
     column-fill: balance;
     columns: 115px 3;
     column-gap: 68px;
+
+    max-width: 485px;
   }
 
   @media (min-width: $breakpoint-large) {
     columns: 120px 5;
     column-gap: 45px;
     margin: 0;
+    max-width: 792px;
   }
 }
 
@@ -164,6 +169,38 @@
   display: block;
   max-width: 100px;
   overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+
+  @media (min-width: $breakpoint-medium) {
+    max-width: 100%;
+    min-width: 115px;
+  }
+}
+
+.form__storage-item .form__input-text {
+  display: block;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+
+  @media (min-width: $breakpoint-medium) {
+    max-width: 100%;
+    min-width: 220px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    min-width: unset;
+  }
+}
+
+.form__delivery-item .form__input-text {
+  display: block;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 
 .form__input[type="checkbox"] + .form__label,
@@ -539,7 +576,7 @@
 .form__button.button {
   width: 100%;
   margin: 0 1px 0 0;
-  padding: 12px 12px 12px 6px;
+  padding: 12px 18px 12px 12px;
 
   @media (min-width: $breakpoint-medium) {
     margin: 0 auto;
@@ -557,4 +594,3 @@
   color: $color-error;
   min-height: 20px;
 }
-

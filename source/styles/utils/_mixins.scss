@@ -9,6 +9,9 @@
   text-align: center;
   font-weight: 400;
 
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
   @media (min-width: $breakpoint-medium) {
     font-size: 48px;
   }

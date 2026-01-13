@@ -1,6 +1,8 @@
 @use "../utils" as *;
 
 .card {
+  display: flex;
+  flex-direction: column;
   padding: 0 0 54px;
   border-radius: $border-radius;
   overflow: hidden;
@@ -13,12 +15,16 @@
 
 .card__title {
   width: fit-content;
+  max-width: 100%;
   margin: 0 auto 17px;
   padding: 12px 24px;
   font-size: 28px;
   color: $color-accent-dark;
   text-align: center;
   font-weight: 400;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .card__link {
@@ -49,6 +55,7 @@
 .card__image-wrapper {
   order: -1;
   margin: 0 0 19px;
+  min-height: 180px;
 }
 
 .card__link:hover .card__image-wrapper {
@@ -63,8 +70,13 @@
   filter: brightness(0.9);
 }
 
+.card__image {
+  max-height: 180px;
+}
+
 .card__wrapper {
   padding: 0 0 0 4px;
+  margin: auto 0 0;
 }
 
 .card__price {

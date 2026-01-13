@@ -12,13 +12,18 @@
   border-radius: $border-radius;
   background-color: $color-bright-dark;
 
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+
   cursor: pointer;
   font-family: $font-body;
 
   @include text(
     $font-size: 20px,
     $line-height: 1,
-    $color: $color-text-light
+    $color: $color-text-light,
+    $align: center
   );
 
   letter-spacing: 1px;
