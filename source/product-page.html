@@ -19,50 +19,52 @@
 
   <body class="page__body page-body">
     <header class="page-header page-body__header">
-      <div class="page-header__container container">
-        <a class="page-header__logo logo" href="./index.html">
-          <span class="visually-hidden">Магазин ягод</span>
-          <svg class="logo__image logo__image--header" width="52" height="52" aria-hidden="true">
-            <use href="./icons/stack.svg#logo-berry"></use>
-          </svg>
-          <svg class="logo__text" width="75" height="60" aria-hidden="true">
-            <use href="./icons/stack.svg#logo-text"></use>
-          </svg>
-        </a>
+      <nav class="page-header__navigation">
+        <div class="page-header__bar">
+          <a class="page-header__logo logo" href="./index.html">
+            <span class="visually-hidden">Магазин ягод</span>
+            <svg class="logo__image logo__image--header" width="52" height="52" aria-hidden="true">
+              <use href="./icons/stack.svg#logo-berry"></use>
+            </svg>
+            <svg class="logo__text" width="75" height="60" aria-hidden="true">
+              <use href="./icons/stack.svg#logo-text"></use>
+            </svg>
+          </a>
 
-        <button class="page-header__toggler page-header__toggler--closed page-header__toggler--nojs" type="button">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-          <svg class="page-header__toggler-icon page-header__toggler-icon--closed" width="60" height="60">
-            <use href="./icons/stack.svg#toggler-closed"></use>
-          </svg>
-          <svg class="page-header__toggler-icon page-header__toggler-icon--opened" width="28" height="28">
-            <use href="./icons/stack.svg#toggler-opened"></use>
-          </svg>
-        </button>
+          <button class="page-header__toggler page-header__toggler--closed page-header__toggler--nojs" type="button">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+            <svg class="page-header__toggler-icon page-header__toggler-icon--closed" width="60" height="60">
+              <use href="./icons/stack.svg#toggler-closed"></use>
+            </svg>
+            <svg class="page-header__toggler-icon page-header__toggler-icon--opened" width="28" height="28">
+              <use href="./icons/stack.svg#toggler-opened"></use>
+            </svg>
+          </button>
+        </div>
 
-        <nav class="page-header__navigation page-header__navigation--nojs main-navigation main-navigation--nojs">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">Каталог</a>
+        <div class="page-header__menu page-header__menu--nojs site-menu">
+          <ul class="site-menu__list ">
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Каталог</a>
             </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">Новости</a>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Новости</a>
             </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">Контакты</a>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">Контакты</a>
             </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="./order.html">Заказать</a>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="./order.html">Заказать</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
 
     <main class="page-main page-body__main page-body__main--dummy">
       <section class="page-body__product">
         <div class="page-body__product-wrapper page-body__product-wrapper--dummy  container">
-          <h1 class="section-title">Заглушка для продукта</h1>
+          <h1 class="section-title">Страница продукта<br>(заглушка)</h1>
           <a class="page-body__return-link page-body__return-link--dummy" href="./index.html">Вернуться на главную</a>
         </div>
       </section>

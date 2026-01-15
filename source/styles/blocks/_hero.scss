@@ -1,15 +1,15 @@
 @use "../utils" as *;
 
 .hero {
-  padding: 60px 27px;
+  padding: 60px 0;
   background-color: $color-background-light;
 
   @media (min-width: $breakpoint-medium) {
-    padding: 150px 27px 60px;
+    padding: 150px 0 60px;
   }
 
   @media (min-width: $breakpoint-large) {
-    padding: 181px 110px 60px;
+    padding: 181px 0 60px;
   }
 }
 

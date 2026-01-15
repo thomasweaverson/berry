@@ -5,18 +5,16 @@
   z-index: 2;
   background-color: $color-background-medium;
 
-  min-height: 68px;
+  min-height: $header-mobile-height;
 
   box-shadow: $shadow;
 
   @media (min-width: $breakpoint-medium) {
-    padding: 22px 0;
-    min-height: 104px;
+    padding: 22px 0 14px;
   }
 
   @media (min-width: $breakpoint-large) {
-    padding: 24px 0;
-    min-height: 108px;
+    padding: 24px 0 16px;
   }
 }
 
@@ -52,8 +50,31 @@
   }
 }
 
-.page-header__container {
+.page-header__navigation {
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 716px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    max-width: 1129px;
+  }
+}
+
+.page-header__bar {
+  max-width: 266px;
+  min-height: $header-mobile-height;
+  margin: 0 auto;
   position: relative;
+
+  @media (min-width: $breakpoint-medium) {
+    width: fit-content;
+    margin: 0;
+  }
 }
 
 .page-header__logo {
@@ -62,8 +83,7 @@
   top: 8px;
 
   @media (min-width: $breakpoint-medium) {
-    left: -1px;
-    top: 0;
+    position: static;
   }
 }
 
@@ -121,13 +141,13 @@
   }
 }
 
-.page-header__navigation {
+.page-header__menu {
   display: none;
   position: absolute;
   z-index: 1;
-  top: 68px;
-  left: -27px;
-  width: 320px;
+  top: $header-mobile-height;
+  left: 0;
+  width: 100%;
   min-height: 360px;
   background-color: $color-background-medium;
 
@@ -137,21 +157,18 @@
     display: block;
     position: static;
     margin: 0 0 0 auto;
-    width: unset;
-    max-width: 550px;
+    width: fit-content;
     min-height: unset;
     box-shadow: none;
   }
-
-  @media (min-width: $breakpoint-large) {
-    margin: 0 0 0 452px;
-    max-width: unset;
-  }
 }
 
-.page-header__navigation--nojs {
-  @media (max-width: $breakpoint-mobile-only) {
+.page-header__menu--shown {
+  display: block;
+}
 
+.page-header__menu--nojs {
+  @media (max-width: $breakpoint-mobile-only) {
     display: block;
     position: static;
     min-height: unset;
@@ -159,8 +176,4 @@
     width: fit-content;
     margin: 0 auto;
   }
-}
-
-.page-header__navigation--shown {
-  display: block;
 }

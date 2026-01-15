@@ -1,16 +1,16 @@
 @use "../utils" as *;
 
 .news {
-  padding: 96px 26px 60px;
+  padding: 96px 0 60px;
 
   @include divider-leaves;
 
   @media (min-width: $breakpoint-medium) {
-    padding: 122px 26px 110px;
+    padding: 122px 0 110px;
   }
 
   @media (min-width: $breakpoint-large) {
-    padding: 149px 26px 100px;
+    padding: 149px 0 100px;
   }
 }
 
