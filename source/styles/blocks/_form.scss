@@ -125,7 +125,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
+  //! Ограничение высоты снимается скриптом при тестировании на переполнение
   height: 304px;
 
   column-count: 2;
@@ -144,16 +144,27 @@
   }
 
   @media (min-width: $breakpoint-large) {
-    columns: 120px 5;
-    column-gap: 45px;
+    display: flex;
+    flex-flow: column wrap;
+    height: 96px;
+    gap: 24px 48px;
     margin: 0;
     max-width: 792px;
   }
 }
 
-.form__berries--auto-height {
-  height: auto;
-  column-fill: balance;
+.form__berries--js-layout {
+  @media (max-width: $breakpoint-mobile-only) {
+    height: auto;
+    column-fill: balance;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(auto, 1fr));
+    column-gap: 20px;
+  }
 }
 
 .form__berry {
@@ -162,6 +173,10 @@
 
   @media (min-width: $breakpoint-medium) {
     margin: 0 0 24px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin: 0;
   }
 }
 
@@ -175,6 +190,10 @@
   @media (min-width: $breakpoint-medium) {
     max-width: 100%;
     min-width: 115px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    min-width: unset;
   }
 }
 
