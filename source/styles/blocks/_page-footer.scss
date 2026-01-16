@@ -40,6 +40,11 @@
 
 .page-footer__wrapper {
   background-color: $color-background-medium;
+  padding: 0 15px;
+
+  @media (min-width: $breakpoint-large) {
+    padding: 0 30px;
+  }
 }
 
 .page-footer__container {
@@ -57,7 +62,7 @@
   }
 
   @media (min-width: $breakpoint-large) {
-    padding: 30px 3px 26px 18px;
+    padding: 30px 3px 26px 19px;
   }
 }
 

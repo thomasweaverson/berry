@@ -3,6 +3,7 @@
 .page-header {
   position: relative;
   z-index: 2;
+  padding: 0 15px;
   background-color: $color-background-medium;
 
   min-height: $header-mobile-height;
@@ -10,16 +11,17 @@
   box-shadow: $shadow;
 
   @media (min-width: $breakpoint-medium) {
-    padding: 22px 0 14px;
+    padding: 22px 15px 14px;
   }
 
   @media (min-width: $breakpoint-large) {
-    padding: 24px 0 16px;
+    padding: 24px 30px 16px;
   }
 }
 
 .page-header--order {
   margin-bottom: 120px;
+  padding-inline: 0;
 
   @media (min-width: $breakpoint-medium) {
     margin-bottom: 200px;
@@ -142,7 +144,6 @@
 }
 
 .page-header__menu {
-  display: none;
   position: absolute;
   z-index: 1;
   top: $header-mobile-height;
@@ -164,7 +165,15 @@
 }
 
 .page-header__menu--shown {
-  display: block;
+  @media (max-width: $breakpoint-mobile-only) {
+    display: block;
+  }
+}
+
+.page-header__menu--hidden {
+  @media (max-width: $breakpoint-mobile-only) {
+    display: none;
+  }
 }
 
 .page-header__menu--nojs {
@@ -173,7 +182,6 @@
     position: static;
     min-height: unset;
     box-shadow: none;
-    width: fit-content;
     margin: 0 auto;
   }
 }

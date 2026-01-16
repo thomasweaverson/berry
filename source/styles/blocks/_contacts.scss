@@ -15,11 +15,12 @@
 }
 
 .contacts__wrapper {
-  max-width: 266px;
+  max-width: 297px;
+  padding: 0 15px;
   margin: 0 auto 17px;
 
   @media (min-width: $breakpoint-medium) {
-    max-width: 408px;
+    max-width: 438px;
     margin: 0 auto 34px;
   }
 
@@ -28,6 +29,7 @@
     grid-row: 1 / 2;
     max-width: 100%;
     margin: 0 auto;
+    padding: 0 30px;
   }
 }
 

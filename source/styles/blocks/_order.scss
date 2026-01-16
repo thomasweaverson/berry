@@ -2,6 +2,7 @@
 
 .order {
   margin: 0 0 89px;
+  padding: 0 15px;
 
   @media (min-width: $breakpoint-medium) {
     margin: 0 0 100px;
@@ -9,6 +10,7 @@
 
   @media (min-width: $breakpoint-large) {
     margin: 0 0 100px;
+    padding: 0 30px;
   }
 }
 
