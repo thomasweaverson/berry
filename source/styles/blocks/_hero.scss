@@ -49,13 +49,14 @@
         url("../../images/hero-background-large@2x.jpg") 2x type("image/jpeg")
       );
     background-repeat: no-repeat;
-    background-position: top -4px left -310px;
+    background-position: top left -310px;
     background-size: cover;
+    min-height: 920px;
   }
 
   @media (min-width: $breakpoint-large) {
-    background-position: top -4px right 0;
-    min-height: 800px;
+    background-position: top right 0;
+    min-height: 796px;
   }
 
   @media (min-width: 1580px) {
